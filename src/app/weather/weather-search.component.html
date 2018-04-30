@@ -1,0 +1,13 @@
+<section class="weather-search" class="form-group">
+            <form   >
+               <div class="form-group">
+                <label for="city">City Name:</label>
+               <!--  two ways data binding through [(ngModel)]  -->
+                <input type="text" placeholder="Enter city name" id="city" [(ngModel)] ="cityName" name="cityname" (input)="onSearchLocationWithEvent($event)" required #input class="city-input-field">  
+
+                </div>
+                <button class="btn btn-primary" [disabled]="disabledForecastButton" (click) ="onSubmitDatabinding()" type="submit">Forecast</button>           
+            </form>          
+            <weather-list [weathers]="weatherForecastData"></weather-list> 
+            <div>{{ errorMessage }}</div>
+</section>
