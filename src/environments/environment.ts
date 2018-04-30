@@ -6,6 +6,6 @@
 export const environment = {
   production: false,
   appId: '8add95931db08cb20bc2875320c0fcbe',
-  baseUrl: 'http://api.openweathermap.org/data/2.5/',
+  baseUrl: 'https://api.openweathermap.org/data/2.5/',
   units: 'metric'
 };
